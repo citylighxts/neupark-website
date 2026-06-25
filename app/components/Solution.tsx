@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Solution() {
   return (
     <section id="solusi" className="py-24 px-6 bg-[#0d0d0d]">
@@ -6,7 +8,7 @@ export default function Solution() {
           <span className="text-[#CCFF00] text-sm font-bold uppercase tracking-widest">Solusi</span>
           <h2 className="text-4xl md:text-5xl font-black mt-3 max-w-2xl">
             Perkenalkan{" "}
-            <span className="text-[#CCFF00]">NeuPark</span> —<br />
+            <span className="text-[#CCFF00]">NeuPark</span>,<br />
             gerbang kampus yang berpikir sendiri
           </h2>
           <p className="text-white/50 mt-4 max-w-xl">
@@ -63,7 +65,7 @@ export default function Solution() {
             <ul className="space-y-3">
               {[
                 "Kamera OCR verifikasi otomatis dalam &lt;5 detik",
-                "Tidak ada antrean — kendaraan langsung masuk",
+                "Tidak ada antrean, kendaraan langsung masuk",
                 "Tidak perlu STNK fisik, e-STNK cukup",
                 "Dashboard real-time log seluruh aktivitas gerbang",
               ].map((t) => (
@@ -71,6 +73,17 @@ export default function Solution() {
               ))}
             </ul>
           </div>
+        </div>
+
+        {/* Product showcase image */}
+        <div className="mb-12 rounded-2xl overflow-hidden border border-white/10">
+          <Image
+            src="/file_000000001994720891471510218b0482.png"
+            alt="NeuPark SmartGate OCR - sistem verifikasi kendaraan otomatis di kampus ITS"
+            width={1456}
+            height={816}
+            className="w-full h-auto"
+          />
         </div>
 
         {/* CTA bridge */}

@@ -1,9 +1,51 @@
+import Image from "next/image";
+
 const members = [
-  { name: "Hana Azizah Nurhadi", nrp: "5025231134", dept: "Teknik Komputer", role: "TC" },
-  { name: "Abbygail Namira W", nrp: "5031231019", dept: "Manajemen Bisnis", role: "MB" },
-  { name: "Nathaniel Supriyo", nrp: "5031231021", dept: "Manajemen Bisnis", role: "MB" },
-  { name: "Ummu Hafsoh", nrp: "5031231022", dept: "Manajemen Bisnis", role: "MB" },
-  { name: "Yohanes Wicaksono", nrp: "5031231074", dept: "Manajemen Bisnis", role: "MB" },
+  {
+    name: "Hana Azizah Nurhadi",
+    nrp: "5025231134",
+    dept: "Teknik Komputer",
+    role: "TC",
+    photo: "/members/hana.png",
+    objectPosition: "center 10%",
+    rotate: false,
+  },
+  {
+    name: "Abbygail Namira W",
+    nrp: "5031231019",
+    dept: "Manajemen Bisnis",
+    role: "MB",
+    photo: "/members/abby.jpeg",
+    objectPosition: "center 25%",
+    rotate: false,
+  },
+  {
+    name: "Nathaniel Supriyo",
+    nrp: "5031231021",
+    dept: "Manajemen Bisnis",
+    role: "MB",
+    photo: null,
+    objectPosition: "center",
+    rotate: false,
+  },
+  {
+    name: "Ummu Hafsoh",
+    nrp: "5031231022",
+    dept: "Manajemen Bisnis",
+    role: "MB",
+    photo: "/members/ummu.jpeg",
+    objectPosition: "65% 12%",
+    rotate: true,
+  },
+  {
+    name: "Yohanes Wicaksono",
+    nrp: "5031231074",
+    dept: "Manajemen Bisnis",
+    role: "MB",
+    photo: null,
+    objectPosition: "center",
+    rotate: false,
+  },
 ];
 
 const roleColors: Record<string, string> = {
@@ -29,10 +71,28 @@ export default function Team() {
               key={m.nrp}
               className="bg-[#1a1a1a] border border-white/10 rounded-2xl p-5 text-center hover:border-[#CCFF00]/30 transition-colors"
             >
-              {/* Avatar placeholder */}
-              <div className="w-16 h-16 rounded-full bg-[#CCFF00]/10 border border-[#CCFF00]/20 flex items-center justify-center text-[#CCFF00] font-black text-2xl mx-auto mb-4">
-                {m.name[0]}
+              {/* Avatar */}
+              <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border border-white/10">
+                {m.photo ? (
+                  <div className="w-full h-full relative">
+                    <Image
+                      src={m.photo}
+                      alt={m.name}
+                      fill
+                      className="object-cover"
+                      style={{
+                        objectPosition: m.objectPosition,
+                        ...(m.rotate && { transform: "scale(1.2)", transformOrigin: "center center" }),
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <div className="w-full h-full bg-[#CCFF00]/10 border border-[#CCFF00]/20 flex items-center justify-center text-[#CCFF00] font-black text-2xl">
+                    {m.name[0]}
+                  </div>
+                )}
               </div>
+
               <div className="font-bold text-sm leading-tight mb-1">{m.name}</div>
               <div className="text-white/40 text-xs mb-3">{m.nrp}</div>
               <span className={`inline-block text-xs font-bold px-2 py-0.5 rounded-full ${roleColors[m.role]}`}>

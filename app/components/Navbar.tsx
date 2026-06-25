@@ -5,7 +5,9 @@ const links = [
   { label: "Masalah", href: "#masalah" },
   { label: "Solusi", href: "#solusi" },
   { label: "Cara Kerja", href: "#cara-kerja" },
+  { label: "Demo", href: "#demo" },
   { label: "Keunggulan", href: "#keunggulan" },
+  { label: "Riset", href: "#riset" },
   { label: "Tim", href: "#tim" },
 ];
 

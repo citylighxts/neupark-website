@@ -67,7 +67,7 @@ export default function BusinessModel() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: "🎓", title: "Kampus & Universitas", desc: "Kampus besar dengan ribuan kendaraan harian — mulai dari ITS, lalu berkembang ke kampus lain." },
+              { icon: "🎓", title: "Kampus & Universitas", desc: "Kampus besar dengan ribuan kendaraan harian. Mulai dari ITS, lalu berkembang ke kampus lain." },
               { icon: "🏢", title: "Perkantoran", desc: "Gedung perkantoran dan kawasan bisnis yang membutuhkan sistem parkir modern." },
               { icon: "🏥", title: "Fasilitas Publik", desc: "Rumah sakit, mal, dan fasilitas umum dengan volume kendaraan tinggi." },
             ].map((t) => (

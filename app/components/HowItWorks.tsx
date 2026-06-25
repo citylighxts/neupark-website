@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const steps = [
   {
     num: "01",
@@ -47,9 +49,6 @@ export default function HowItWorks() {
         </div>
 
         <div className="relative">
-          {/* Connector line */}
-          <div className="hidden lg:block absolute left-[calc(16.67%*0+2rem)] top-8 bottom-8 w-px bg-white/10" style={{ left: "2.5rem" }} />
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {steps.map((s, i) => (
               <div
@@ -70,6 +69,17 @@ export default function HowItWorks() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Hardware detail image */}
+        <div className="mt-10 rounded-2xl overflow-hidden border border-white/10">
+          <Image
+            src="/file_00000000ef1c720881041a97ef40b4fe.png"
+            alt="NeuPark SmartGate OCR - spesifikasi hardware dan dimensi unit"
+            width={1456}
+            height={816}
+            className="w-full h-auto"
+          />
         </div>
 
         {/* Tech badge */}

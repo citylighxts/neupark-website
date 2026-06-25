@@ -19,7 +19,7 @@ export default function Contact() {
         </a>
 
         <div className="mt-16 pt-8 border-t border-white/10 text-white/30 text-sm">
-          NeuPark · Group 10 · KBT ITS · 2025
+          NeuPark · Group 10 · KBT ITS · 2026
         </div>
       </div>
     </section>

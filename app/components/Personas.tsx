@@ -47,7 +47,7 @@ export default function Personas() {
             Siapa yang kami bantu?
           </h2>
           <p className="text-white/50 mt-4 max-w-lg">
-            NeuPark dirancang untuk dua pengguna utama — mahasiswa yang menggunakan motor harian, dan pengelola fasilitas kampus.
+            NeuPark dirancang untuk dua pengguna utama: mahasiswa yang menggunakan motor harian, dan pengelola fasilitas kampus.
           </p>
         </div>
 

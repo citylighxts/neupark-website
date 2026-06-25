@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NeuPark — Smart Parking Gate",
+  title: "NeuPark | Smart Parking Gate",
   description: "Verifikasi STNK otomatis, tanpa petugas. Solusi gerbang parkir cerdas berbasis OCR untuk kampus.",
 };
 

@@ -13,7 +13,7 @@ const features = [
   },
   {
     icon: "🔒",
-    title: "Aman — 100% Terverifikasi",
+    title: "Aman, 100% Terverifikasi",
     desc: "Setiap kendaraan yang masuk dipastikan memiliki plat yang cocok dengan STNK-nya.",
     highlight: true,
   },
