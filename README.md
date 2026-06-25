@@ -134,8 +134,6 @@ npm run lint
 | Ummu Hafsoh | 5031231022 | Manajemen Bisnis (MB) |
 | Yohanes Wicaksono | 5031231074 | Manajemen Bisnis (MB) |
 
-**Kontak:** hanaazizahn@gmail.com
-
 ---
 
 ## Lisensi
