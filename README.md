@@ -128,7 +128,7 @@ npm run lint
 
 | Nama | NRP | Jurusan |
 |------|-----|---------|
-| Hana Azizah Nurhadi | 5025231134 | Teknik Komputer (TC) |
+| Hana Azizah Nurhadi | 5025231134 | Teknik Informatika (TC) |
 | Abbygail Namira W | 5031231019 | Manajemen Bisnis (MB) |
 | Nathaniel Supriyo | 5031231021 | Manajemen Bisnis (MB) |
 | Ummu Hafsoh | 5031231022 | Manajemen Bisnis (MB) |
